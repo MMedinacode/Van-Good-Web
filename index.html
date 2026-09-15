@@ -45,16 +45,28 @@
   - Fotos: 4 fotos propias del local publicadas en su ficha de Google.
   - GANCHO DE VENTA: Google muestra 'Agregar sitio web' en su ficha. NO TIENEN SITIO.
 
+  ✅ ACTUALIZADO 15-09-2026 (Matías):
+  - Logo real agregado (fotos/logo.jpg) — taza de pinceladas con girasol.
+  - Instagram real encontrado: @van.goodcl (844 seguidores, 15-09-2026).
+    Bio confirma horario propio: Lun-Vie 09:30-20:00, Sáb 10:00-20:00 (ajustado
+    de 20:30 a 20:00 el sábado, dato más reciente y de fuente propia que Google).
+    Agregado a la pestaña Redes (redes.js) — sin fotos/posts propios descargados,
+    solo usuario + seguidores, para no inventar contenido que no se verificó.
+  - Rappi confirmado: https://www.rappi.cl/restaurantes/900119573-cafeteria-van-good
+    Trae carta completa con precios reales (6 categorías: Bebidas Frías, Té y
+    Café, Sándwiches, Dulces, Pizzas, Desayunos) — se usó para completar la
+    carta, que antes tenía solo 5 productos sin precio. Ojo: son precios de
+    delivery en Rappi, pueden diferir un poco de los del local. Botón "Pedir
+    por Rappi" agregado en Visítanos.
+
   ⚠️ PENDIENTE / NUNCA INVENTADO:
-  - CARTA: la de esta demo tiene solo 5 productos porque son los únicos que se pueden
-  -   probar con reseñas o fotos propias. ES LO PRIMERO QUE HAY QUE PEDIRLES.
-  - SIN INSTAGRAM ENCONTRADO: se probaron varias variantes del nombre y ninguna existe.
-  -   Preguntarles si tienen cuenta.
-  - WHATSAPP: el número es móvil pero no se pudo confirmar que tenga WhatsApp.
-  -   Por eso la página usa tel:.
-  - PEDIDOS EN LÍNEA: su ficha de Google muestra un botón 'Pedir en línea' pero no se
-  -   pudo ver a qué plataforma apunta. Preguntarles y enlazarlo desde la página.
-  - HORA DE APERTURA: Google solo confirma el cierre (20:00).
+  - WHATSAPP: el número es móvil pero no se pudo confirmar que tenga WhatsApp
+    (ni en su bio de Instagram hay link wa.me). Por eso la página sigue
+    usando tel:.
+  - PEDIDOS EN LÍNEA: su ficha de Google muestra un botón 'Pedir en línea' pero
+    no se pudo ver a qué plataforma apunta (aparte del Rappi ya confirmado).
+  - HORA DE APERTURA: Google solo confirma el cierre; el horario completo real
+    ahora viene de su propio Instagram (ver arriba).
   - Se recortó la foto de la fachada para dejar fuera la ventana, porque se veían
   -   clientes identificables adentro.
   - Faltan fotos de los sándwiches en ciabatta, que son su producto más nombrado.
@@ -72,7 +84,7 @@
 
 <div id="loader">
   <div class="loader-marca" aria-hidden="true">
-    <svg viewBox="0 0 64 64" width="48" height="48"><path d="M10 22h34v18a14 14 0 0 1-14 14h-6a14 14 0 0 1-14-14z" fill="currentColor"/></svg>
+    <img src="fotos/logo.jpg" alt="Cafetería Van Good">
   </div>
 </div>
 
@@ -80,7 +92,7 @@
   <div class="header-inner">
     <button class="brand" data-tab="inicio">
       <span class="brand-ico" aria-hidden="true">
-        <svg viewBox="0 0 64 64" width="22" height="22"><path d="M10 22h34v18a14 14 0 0 1-14 14h-6a14 14 0 0 1-14-14z" fill="currentColor"/></svg>
+        <img src="fotos/logo.jpg" alt="">
       </span>
       <span class="brand-name">Van Good</span>
     </button>
@@ -287,6 +299,7 @@
             <a class="btn btn-solid" href="tel:+56931906191">Llamar al local</a>
             <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Cafeter%C3%ADa+Van+Good+San+Bernardo&destination_place_id=0x9662d9116debde31:0x362574ea8601ba3f" target="_blank" rel="noopener">Cómo llegar</a>
             <a class="btn btn-ghost" href="https://waze.com/ul?ll=-33.5929865,-70.6994956&navigate=yes" target="_blank" rel="noopener">Abrir en Waze</a>
+            <a class="btn btn-ghost" href="https://www.rappi.cl/restaurantes/900119573-cafeteria-van-good" target="_blank" rel="noopener">Pedir por Rappi</a>
             </div>
           </div>
 
@@ -337,8 +350,11 @@
 <script src="carta-fotos.js"></script>
 <script src="script.js"></script>
 <script src="carrito.js"></script>
-<!-- Horario REAL de su ficha de Google Maps (11-09-2026). El módulo horario.js pinta la semana completa y el estado en vivo. -->
-<script>window.HORARIO={dias:["09:30 - 20:00","09:30 - 20:00","09:30 - 20:00","09:30 - 20:00","09:30 - 20:00","10:00 - 20:30","Cerrado"],fuente:"Google Maps, 11-09-2026"};</script>
+<!-- Horario: base de Google Maps (11-09-2026), sábado corregido a 20:00 con la propia bio de Instagram (15-09-2026, fuente más reciente y propia). -->
+<script>window.HORARIO={dias:["09:30 - 20:00","09:30 - 20:00","09:30 - 20:00","09:30 - 20:00","09:30 - 20:00","10:00 - 20:00","Cerrado"],fuente:"bio de su Instagram @van.goodcl, 15-09-2026 (antes: Google Maps, 11-09-2026)"};</script>
 <script src="horario.js"></script>
+<!-- Redes reales verificadas (15-09-2026): solo Instagram, sin fotos/posts propios descargados para no inventar contenido. -->
+<script>window.REDES={instagram:{user:"van.goodcl",seguidores:"844",nota:"Su cuenta real, con el mural de Van Gogh y los girasoles del local en las fotos de portada."}};</script>
+<script src="redes.js"></script>
 </body>
 </html>
