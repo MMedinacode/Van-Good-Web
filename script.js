@@ -5,7 +5,7 @@
    Rappi (https://www.rappi.cl/restaurantes/900119573-cafeteria-van-good).
    Ojo: son precios de delivery, pueden variar un poco de los del local.
    Se mantienen además "Café con naranja" y "Chocolate caliente", verificados
-   antes con fotos propias del local y reseñas reales, aunque Rappi no los
+   antes con fotos propias del local y reseñas, aunque Rappi no los
    liste con ese nombre — por eso quedan sin precio ("Consultar").
    ============================================================ */
 
@@ -34,7 +34,7 @@ const MENU = {
       { "n": "Mocaccino", "d": "Espresso con leche vaporizada, espuma y sirope de chocolate.", "p": 4200 },
       { "n": "Latte chai", "d": "Espresso doble con leche texturizada con syrup de té chai.", "p": 3690 },
       { "n": "Té (variedades)", "d": "Infusión de hojas disponible en diversas variedades.", "p": 2500 },
-      { "n": "Chocolate caliente", "d": "\"El chocolate muy bueno\", dice una reseña real. Va con cacao espolvoreado y malvaviscos", "img": "chocolate.jpg" }
+      { "n": "Chocolate caliente", "d": "\"El chocolate muy bueno\", dice una reseña. Va con cacao espolvoreado y malvaviscos", "img": "chocolate.jpg" }
     ]
   },
   "sandwiches": {
