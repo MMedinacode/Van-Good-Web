@@ -341,3 +341,51 @@ h1,h2,h3{ font-family:var(--font-display); font-weight:600; line-height:1.14; }
   .tab-panel{ animation:none; }
   .loader-marca{ animation:none; }
 }
+
+
+/* ── El taller del mes ─────────────────────────────────────────────────
+   Va arriba de la carta porque es lo que tiene fecha: si alguien entra
+   esta semana, es lo primero que le sirve saber. Hereda el azul y el
+   amarillo de su propia marca —los girasoles y la noche estrellada— sin
+   inventar un color nuevo. */
+.evento{
+  display:flex; gap:clamp(14px,3vw,26px); align-items:flex-start;
+  background:linear-gradient(135deg, var(--acento) 0%, var(--acento-osc) 100%);
+  color:#fff; border-radius:var(--r, 18px);
+  padding:clamp(18px,3vw,26px); margin:0 0 22px;
+  box-shadow:0 18px 40px -26px rgba(20,52,107,.9);
+  flex-wrap:wrap;
+}
+.evento[hidden]{display:none}
+.evento-tag{
+  flex:none; align-self:flex-start;
+  background:var(--segundo); color:var(--acento-osc);
+  font-size:11px; font-weight:800; letter-spacing:.12em; text-transform:uppercase;
+  padding:5px 11px; border-radius:999px;
+}
+.evento-cuerpo{flex:1 1 320px; min-width:0}
+.evento h3{
+  margin:0 0 6px; color:#fff;
+  font-size:clamp(21px,3.4vw,27px); line-height:1.15;
+}
+.evento-lead{margin:0 0 12px; color:rgba(255,255,255,.86); max-width:56ch; line-height:1.55}
+.evento-datos{
+  list-style:none; margin:0 0 16px; padding:0;
+  display:grid; gap:5px;
+}
+.evento-datos li{
+  font-size:14.5px; color:rgba(255,255,255,.92);
+  padding-left:18px; position:relative; line-height:1.45;
+}
+.evento-datos li::before{
+  content:""; position:absolute; left:0; top:.62em;
+  width:6px; height:6px; border-radius:50%;
+  background:var(--segundo);
+}
+.evento-datos a{color:var(--segundo)}
+.evento .btn-solid{
+  background:var(--segundo); color:var(--acento-osc);
+  border-color:var(--segundo);
+}
+.evento .btn-solid:hover{filter:brightness(1.08)}
+@media (max-width:560px){ .evento{gap:12px} }

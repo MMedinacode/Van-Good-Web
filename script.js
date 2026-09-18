@@ -10,6 +10,32 @@
    ============================================================ */
 
 const MENU = {
+  "talleres": {
+    "label": "Talleres de pintura",
+    "items": [
+      {
+        "n": "Opción Girasol",
+        "d": "Figura de yeso o lienzo + bebida fría o caliente.",
+        "img": "ig-talleres.jpg"
+      },
+      {
+        "n": "Opción Lirios",
+        "d": "Figura de yeso o lienzo + bebida fría o caliente + dulce.",
+        "p": 14990
+      },
+      {
+        "n": "Opción Trigal",
+        "d": "Figura de yeso o lienzo + bebida fría o caliente + sándwich.",
+        "p": 16990
+      },
+      {
+        "n": "Opción Cipreses",
+        "d": "Figura de yeso o lienzo + bebida fría o caliente + sándwich y dulce.",
+        "p": 18990
+      }
+    ]
+  },
+
   "frias": {
     "label": "Bebidas Frías",
     "items": [
