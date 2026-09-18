@@ -389,3 +389,10 @@ h1,h2,h3{ font-family:var(--font-display); font-weight:600; line-height:1.14; }
 }
 .evento .btn-solid:hover{filter:brightness(1.08)}
 @media (max-width:560px){ .evento{gap:12px} }
+
+/* El taller va pegado al hero, no a media pagina de distancia: es lo que
+   tiene fecha y cupos, y se lee antes que nada. Por eso su franja lleva
+   menos aire arriba y ninguno abajo, para que el bloque siguiente siga
+   como si nada. */
+.section-evento{ padding-top:clamp(24px,4vw,40px); padding-bottom:0; }
+.section-evento .evento{ margin-bottom:0; }
